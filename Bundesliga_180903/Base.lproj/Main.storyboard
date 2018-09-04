@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SpieleVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SpieleVC" customModule="Bundesliga_180903" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="STB-D7-VXm">
+                                <rect key="frame" x="0.0" y="44" width="375" height="634"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCells" rowHeight="80" id="leK-jn-plX" customClass="SpieleTableViewCell" customModule="Bundesliga_180903" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="leK-jn-plX" id="oMf-Vh-mLl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="g0a-Y5-wTL">
+                                                    <rect key="frame" x="15" y="11" width="345" height="58"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXh-4h-BjO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="107" height="58"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3FB-WX-84j">
+                                                            <rect key="frame" x="119" y="0.0" width="107" height="58"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="HmL-dq-YtX">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="107" height="58"/>
+                                                                    <subviews>
+                                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mLS-oW-0sQ">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="40.666666666666664" height="58"/>
+                                                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                                            <textInputTraits key="textInputTraits"/>
+                                                                            <connections>
+                                                                                <action selector="homeGoalsInput:" destination="leK-jn-plX" eventType="editingChanged" id="eFd-lu-Dbw"/>
+                                                                            </connections>
+                                                                        </textField>
+                                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-Ki-ZTM">
+                                                                            <rect key="frame" x="66.666666666666657" y="0.0" width="40.333333333333343" height="58"/>
+                                                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                                            <textInputTraits key="textInputTraits"/>
+                                                                            <connections>
+                                                                                <action selector="guestGoalsInput:" destination="leK-jn-plX" eventType="editingChanged" id="9G8-wF-xfS"/>
+                                                                            </connections>
+                                                                        </textField>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.96862775089999997" green="0.90907219510000004" blue="0.28560548099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="HmL-dq-YtX" firstAttribute="leading" secondItem="3FB-WX-84j" secondAttribute="leading" id="Amc-40-OjH"/>
+                                                                <constraint firstItem="HmL-dq-YtX" firstAttribute="top" secondItem="3FB-WX-84j" secondAttribute="top" id="T5g-da-92e"/>
+                                                                <constraint firstAttribute="trailing" secondItem="HmL-dq-YtX" secondAttribute="trailing" id="b8w-wr-fLh"/>
+                                                                <constraint firstAttribute="bottom" secondItem="HmL-dq-YtX" secondAttribute="bottom" id="nZi-Ff-at1"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idb-Dd-i9G">
+                                                            <rect key="frame" x="238" y="0.0" width="107" height="58"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.96862775089999997" green="0.90907219510000004" blue="0.28560548099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="g0a-Y5-wTL" secondAttribute="bottom" id="7gk-vG-VPF"/>
+                                                <constraint firstItem="g0a-Y5-wTL" firstAttribute="leading" secondItem="oMf-Vh-mLl" secondAttribute="leadingMargin" id="ANZ-mG-JcD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="g0a-Y5-wTL" secondAttribute="trailing" id="jLb-tB-gn2"/>
+                                                <constraint firstItem="g0a-Y5-wTL" firstAttribute="top" secondItem="oMf-Vh-mLl" secondAttribute="topMargin" id="kYz-Zh-I4F"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="guestLabels" destination="idb-Dd-i9G" id="vaW-rm-sjc"/>
+                                            <outlet property="guestTextFields" destination="9nC-Ki-ZTM" id="ENp-GY-cYk"/>
+                                            <outlet property="homeLabels" destination="EXh-4h-BjO" id="jSP-Kg-V6G"/>
+                                            <outlet property="homeTextFields" destination="mLS-oW-0sQ" id="uOh-dg-qbw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzN-Q4-DGV">
+                                <rect key="frame" x="145" y="708" width="85" height="51"/>
+                                <color key="backgroundColor" red="1" green="0.70706380719999995" blue="0.12873427339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Press!"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="STB-D7-VXm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3jz-qR-kcR"/>
+                            <constraint firstItem="TzN-Q4-DGV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3yO-DM-KaH"/>
+                            <constraint firstItem="TzN-Q4-DGV" firstAttribute="top" secondItem="STB-D7-VXm" secondAttribute="bottom" constant="30" id="fBJ-9P-bmm"/>
+                            <constraint firstItem="STB-D7-VXm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hgm-8C-tQJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="STB-D7-VXm" secondAttribute="trailing" id="jn4-kW-ipN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="STB-D7-VXm" secondAttribute="bottom" constant="100" id="kFm-M5-Zau"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="STB-D7-VXm" id="FCE-FT-fN4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-319.19999999999999" y="77.58620689655173"/>
+        </scene>
+    </scenes>
+</document>
